@@ -11,7 +11,7 @@ module.exports = function(app) {
 		for (var i = 0; i < friends.length; i++) {
 			var friendsArrScore = friends[i].scores;
 			friendsArrScore.forEach(function(value, i) {
-				console.log(value - reqScoreArr[i]);
+				let diff = value - reqScoreArr[i];
 			})
 			console.log(friendsArrScore);
 			console.log('friendsarr ' + friendsArrScore[i], ' newObjScore ' + reqScoreArr[i]);
